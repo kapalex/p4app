@@ -20,7 +20,7 @@ ENV MININET_DEPS automake \
                  gcc \
                  help2man \
                  iperf \
-                 iproute \
+                 iproute2 \
                  libtool \
                  make \
                  pkg-config \
