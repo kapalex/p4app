@@ -39,7 +39,7 @@ ENV MININET_DEPS automake \
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends $NET_TOOLS $MININET_DEPS
+    apt-get install -y -o Dpkg::Options::=--force-confdef --no-install-recommends $NET_TOOLS $MININET_DEPS
 
 # Fix to get tcpdump working
 RUN mv /usr/sbin/tcpdump /usr/bin/tcpdump
